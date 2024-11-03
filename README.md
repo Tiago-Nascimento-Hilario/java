@@ -1,18 +1,28 @@
-## Getting Started
+# 📚 Java Projects
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este repositório contém uma coleção de projetos em Java desenvolvidos para **demonstrar habilidades** em **programação orientada a objetos (OOP)**, **estruturas de dados** e **desenvolvimento de aplicações**. Cada projeto foi criado para resolver um problema específico ou explorar uma funcionalidade do Java.
 
-## Folder Structure
+## 🧩 Conteúdo do Repositório
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🚀 Tecnologias Utilizadas
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **Java SE** para a lógica de programação e desenvolvimento de back-end.
+- **JDBC** para conectividade com bancos de dados.
+- **JavaFX/Swing** para interfaces gráficas (quando aplicável).
+- **JUnit** para testes automatizados (se aplicável).
+- **SPRING BOOT**
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 📂 Estrutura do Projeto
 
-## Dependency Management
+Cada projeto está organizado em pastas separadas com seus próprios arquivos `README` detalhando:
+- O problema que o projeto resolve
+- Tecnologias e frameworks específicos usados
+- Passos para execução
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 🛠️ Executando os Projetos
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+
