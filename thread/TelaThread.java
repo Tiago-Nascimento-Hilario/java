@@ -2,6 +2,10 @@ package thread;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class TelaThread extends JDialog {
 
@@ -15,6 +19,24 @@ public class TelaThread extends JDialog {
 
     private JButton jButtonStart = new JButton("Start");
     private JButton jButtonStop = new JButton("Stop");
+
+    private Runnable thread1 = new Runnable() {
+        @Override
+         public void run() {
+            while (true) {
+                mostraTempo.setText(new SimpleDateFormat("dd/MM/yyyy hh:mm.ss").format(Calendar.getInstance().getTime()));
+                System.out.println("Thread 1");
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
+    };
+
+    private Thread threadTime1;
+
 
     public TelaThread(){/*Construtor executa o que tiver dentro no momento da execução do objeto da classe*/
 
@@ -58,7 +80,22 @@ public class TelaThread extends JDialog {
         gridBagConstraints.gridx ++;
         jPanel.add(jButtonStop, gridBagConstraints);
 
+        /* Ação dos botões*/
 
+        jButtonStart.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                threadTime1 = new Thread(thread1);
+                threadTime1.start();
+            }
+        });
+
+        jButtonStop.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                threadTime1.interrupt();
+            }
+        });
 
         add(jPanel, BorderLayout.WEST);
         setVisible(true); /* Torna a tela visível para usuário sempre será o último comando a ser executado*/
