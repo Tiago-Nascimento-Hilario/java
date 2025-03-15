@@ -2,7 +2,8 @@ package condicionais;
 
 import javax.swing.JOptionPane;
 
-public class Ifelse {
+// If Else
+public class Exercicio01 {
     public static void main(String[] args) {
         
         Object[] opcao = {"Masculino", "Feminino"};
