@@ -1,6 +1,6 @@
 package condicionais;
 
-import javax.swing.JOptionPane;
+import javax.swing.*;
 
 // If Else
 public class Exercicio01 {
