@@ -16,7 +16,27 @@ header img{
     height: 50px;
     border-radius: 6px;
 }
-
+<<<<<<< HEAD
 section{
     background-color: rgb(22, 218, 22) ;
 }
+=======
+
+header ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    margin-right: 10px;
+}
+
+header ul a{
+    text-decoration: none;
+}
+
+header ul a li{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+>>>>>>> b1263b158699d499767b6947bb5e09bb7cf98332
